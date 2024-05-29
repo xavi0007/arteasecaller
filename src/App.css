@@ -36,3 +36,92 @@
     transform: rotate(360deg);
   }
 }
+
+/* src/App.css */
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.responsive-image {
+  width: 45%;
+  height: auto;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+
+.responsive-image:last-child {
+  margin-right: 0;
+}
+
+.text-area {
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.button-container,
+.predefined-button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.speak-button, .clear-button, .predefined-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  flex: 1 1 auto;
+}
+
+.speak-button:hover, .clear-button:hover, .predefined-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-area {
+    font-size: 1rem;
+  }
+
+  .speak-button, .clear-button, .predefined-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
